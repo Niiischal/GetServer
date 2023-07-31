@@ -1,7 +1,10 @@
+require('dotenv').config();
 const express = require('express')
+const helmet = require('helmet')
+const connection = require('./db')
+
 const app= express()
 const port= 5000
-const helmet = require('helmet')
 
 //Middleware
 app.use(helmet())
