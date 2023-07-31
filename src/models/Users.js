@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
 const Joi= require('joi')
+const passwordComplexity = require('joi-password-complexity');
 const {Schema} = mongoose;
 
 JWT_SECRET_CODE = 'nischalKhatiwada@77'
