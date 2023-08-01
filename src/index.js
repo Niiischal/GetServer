@@ -14,6 +14,8 @@ app.use(express.json())
 
 //Available routes
 app.use('/api/register', require('./routes/authentication/register'))
+app.use('/api/login', require('./routes/authentication/login'))
+
 
 app.listen(port, () => {
     console.log(`GetServer running on ${port}`)
