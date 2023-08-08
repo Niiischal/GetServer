@@ -50,13 +50,5 @@ const validate = (data) => {
     return schema.validate(data);
 };
 
-const validateLogin = (data) => {
-    const schema = Joi.object({
-        username : Joi.string().required().label('Username'),
-        password :Joi.string().required().label('Password'),
-        role: Joi.string().label('Role')
-    });
-    return schema.validate(data);
-};
 
-module.exports = {User, validate, validateLogin}
+module.exports = {User, validate}
